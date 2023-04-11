@@ -1,0 +1,37 @@
+<form class="example-form" [formGroup]="usuarioForm" (ngSubmit)="AgregarUsuario()">
+    <mat-card>
+    <mat-card-content>    
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre" formControlName="nombre">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Apellido</mat-label>
+        <textarea matInput placeholder="Apellido" formControlName="apellido" ></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <textarea matInput placeholder="Usuario" formControlName="usuario" ></textarea> 
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Correo</mat-label>
+        <textarea matInput placeholder="Correo" formControlName="correo" ></textarea> 
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Clave</mat-label>
+        <textarea matInput placeholder="Clave" formControlName="clave" ></textarea> 
+    </mat-form-field>
+
+</mat-card-content>
+    <mat-card-footer>
+        <div class="example-button-row" style="margin: 2px">
+            <button mat-raised-button color="primary"  style="margin-right: 8px">Guardar</button>
+            <a (click)="CerrarFormulario()" mat-raised-button color="accent"  style="margin-right: 8px">Cerrrar</a>
+        </div>
+    </mat-card-footer>
+    </mat-card>
+</form>
